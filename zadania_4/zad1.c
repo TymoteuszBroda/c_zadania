@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-unsigned long long factorial(unsigned int n) {
+long factorial(int n) {
     if (n == 0 || n == 1) {
         return 1;
     }
@@ -8,11 +8,11 @@ unsigned long long factorial(unsigned int n) {
 }
 
 int main() {
-    unsigned int n;
+    int n;
     
     printf("Podaj liczbe calkowita: ");
-    scanf("%u", &n);
+    scanf("%d", &n);
     
-    printf("Silnia z %u = %llu\n", n, factorial(n));
-    return 1;
+    printf("Silnia z %d = %ld\n", n, factorial(n));
+    return 0;
 }
